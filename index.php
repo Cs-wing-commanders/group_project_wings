@@ -15,6 +15,8 @@
   </section>
 
   <section class="mx-auto max-w-6xl px-4 py-20 text-center lg:px-8">
+
+</section>
     <h2 class="font-display text-3xl font-semibold text-stone-900 sm:text-4xl">About us</h2>
     <div class="mx-auto mt-4 h-px w-20 bg-brand/40"></div>
     <p class="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-stone-600">Experience the finest Indian and Pakistani cuisine at Royal Nawab — a calm dining room, bold flavours, and service that stays with you.</p>

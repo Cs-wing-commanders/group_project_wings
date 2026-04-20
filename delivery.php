@@ -26,7 +26,26 @@ include 'inc/nav.php';
       </div>
     </div>
   </section>
+   <section class="mx-auto max-w-2xl px-4 pb-20 lg:px-8">
+    <h2 class="text-center font-display text-sm font-semibold uppercase tracking-[0.2em] text-stone-900">Delivery area</h2>
+    <p class="mt-2 text-center text-sm text-stone-600">Enter your postcode to check we deliver to you.</p>
+    <div class="mt-6 flex overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
+      <input id="pc" type="text" placeholder="Postcode" class="min-w-0 flex-1 border-0 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-inset focus:ring-brand/30" />
+      <button type="button" onclick="checkPostcode()" class="bg-stone-900 px-6 py-3 text-xs font-bold uppercase tracking-widest text-white transition hover:bg-brand">Search</button>
+    </div>
+    <div class="mt-6 flex h-44 flex-col items-center justify-center gap-3 rounded-2xl bg-stone-200/60 text-stone-600">
+      <span>📍 Royal Nawab</span>
+      <a href="#" class="inline-flex rounded-full border border-stone-400 px-5 py-2 text-xs font-semibold uppercase tracking-widest text-stone-800 hover:bg-white">Directions</a>
+    </div>
+  </section>
   </main>
+  <script>
+function checkPostcode() {
+  var pc = document.getElementById('pc').value.trim();
+  if (!pc) { alert('Please enter a postcode.'); return; }
+  alert('We deliver to ' + pc.toUpperCase() + '. You can place an order.');
+}
+</script>
   <?php include 'inc/footer.php'; ?>
 </body>
 </html>
